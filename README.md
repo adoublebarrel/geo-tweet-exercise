@@ -1,6 +1,6 @@
 # geo-tweet-exercise
 
-This is a rough AngularJS client and Django server that together display a 10 tweets from twitter that can then be added to an interactive map.
+This is a rough AngularJS client and Django server that together display 10 tweets from twitter that can then be added to an interactive map.
 
 ## Installation
 

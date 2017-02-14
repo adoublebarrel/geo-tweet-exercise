@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 
 import os
 
-TWITTER_BEARER_TOKEN = 'AAAAAAAAAAAAAAAAAAAAACB3zAAAAAAAOEayBSisgbD5ekj1MT9au0jA9bQ%3DKkb28VktHPY8xiG7JVujcEAHyLOpTZVUnsKGGj0HsTRvyJSFz0'
+TWITTER_BEARER_TOKEN = ''
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
