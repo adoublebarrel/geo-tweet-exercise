@@ -2,6 +2,12 @@
 
 This is a rough AngularJS client and Django server that together display 10 tweets from twitter that can then be added to an interactive map.
 
+## Pre-requisites
+
+- linux
+- python3
+- Node
+
 ## Installation
 
 ### Server
