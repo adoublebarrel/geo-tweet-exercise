@@ -1,0 +1,30 @@
+<tld-map id="map" class="crosshair" ngClick="onDrop($event, $data, tweets)" tld-options="::mapOptions"></tld-map>
+<div id="tweets">
+  <div ng-class="tweetClasses(t)"
+       ng-click="selectTweet(t)"
+       ng-repeat="t in tweets">
+    <div class="tweet-info">
+      <h2>{{t.text}}</h2>
+    </div>
+    <div class="tweet-actions">
+      <button class="icon ion-location myButton" ng-click="searchCountries($event, t)"></button>
+      <button class="icon ion-pin myButton" ng-click="pinTweet($event, t)"></button>
+    </div>
+  </div>
+</div>
+<div id="searchCountries" ng-class="countriesDialogClass">
+  <div class="search-controls">
+    <angucomplete-alt id="ex1"
+                      placeholder=" Search countries&hellip;"
+                      pause="100"
+                      selected-object="addMarkerToCountry"
+                      local-data="countries"
+                      search-fields="name"
+                      title-field="name"
+                      minlength="1"
+                      input-class="form-control form-control-large"
+                      match-class="search-highlight"
+    />
+    <button class="myButton" value="Pin Tweet">Pin Tweet</button>
+  </div>
+</div>
